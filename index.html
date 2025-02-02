@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet " href="style.css">
+    <script src="https://kit.fontawesome.com/b3fcc419f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Screenshot 2025-02-02 130357.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Experience</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Conatct</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I am <span>Hardik Sharma</span></h1>
+                
+            </div>
+        </div>
+
+    </div>
+   <!-- ----------------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Picture3_resized_300.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a keen learner and open to explore new oportunities and face challenges. Currently I am developing my technical skills like learning DSA in Java and web development. I have a little experience in python programmming also. Also would like to mention that I am also good in academics. My hobbies are playing sports and video gaems, travelling and listening music.  </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>DSA in Java</span><br>Problem solving skill</li>
+                            <li><span>WebDevelopment</span><br>Website Development</li>
+                            <li><span>Python Programming</span><br>Descent python programmer</li>
+
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>IETE MAIT</span><br>Currently a member of IETE MAIT in technical and PR Team</li>
+                            <li><span>Python Programmer</span><br>Done a course and made a basic project at DevSkill Hub</li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Passed my 10th class with 93.4% from Harayana</li>
+                            <li><span>2023</span><br>Passed my 12th class with 92% from Delhi</li>
+                            <li><span>2023-Current</span><br>Pursuing B-Tech from Maharaja Agrasen Institute of Technology<br> in Information Technology branch with 9.36 CGPA</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------services----------------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Technical and PR Team</h2>
+                    <p>Currently engaged in Technical and PR team of IETE MAIT</p>
+
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+     <!-- --------------------portfolio---------------- -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/python-logo-100x100.png">
+                    <div class="layer">
+                        <h3>Movie Ticket Booking </h3>
+                        <p>The program allows the user to book the movie ticket according to their requirement. It asks the user their preferances and mail thier ticket to them. The program was coded using basic functions in python language.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+      <!-- --------------contact------------- -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sharmahardikk07@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7082247753</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/hardikk._23"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/07Hardik07"><i class="fa-brands fa-x-twitter"></i></i></a>
+                        <a href="http://www.linkedin.com/in/hardik-sharma-01093a322"><i class="fa-brands fa-linkedin"></i></i></a>
+                        <a href="https://github.com/Hardikk-7"><i class="fa-brands fa-github"></i></i></a>
+                    </div>
+                    <a href="images/Resume (Hardik).pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Messeage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+       </div>
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+    
+</body>
+</html>
