@@ -291,8 +291,19 @@ nav.fa{
         display: block;
         font-size: 25px;
         color:#fff;
-       
-
+    }
+    nav i.fa-bars {
+        color: aqua; 
+        font-size: 30px; 
+        cursor: pointer;
+    }
+    nav ul i.fa-xmark {
+        color: red; 
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        left: 20px; 
+        cursor: pointer;
     }
     nav ul{
         background: aqua;
