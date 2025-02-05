@@ -298,7 +298,7 @@ nav.fa{
         cursor: pointer;
     }
     nav ul i.fa-xmark {
-        color: black; 
+        color: #fff; 
         font-size: 30px;
         position: absolute;
         top: 20px;
@@ -306,10 +306,10 @@ nav.fa{
         cursor: pointer;
     }
     nav ul li a {
-        color: black !important; 
+        color: #fff; 
     }
     nav ul{
-        background: aqua;
+        background: black;
         position: fixed;
         top: 0;
         right: -200px;
